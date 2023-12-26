@@ -981,13 +981,10 @@ color: rgba(46, 47, 66, 0.40);
     margin-bottom: 24px;
 }
 
-.checkbox:checked{
-    border: none;
-}
-
 .checkbox:checked + .form-agreement > .form-agreement-checkbox {
 background-color: #404BBF;
 fill: #F4F4FD;
+border: none;
 }
 
 
