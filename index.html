@@ -441,7 +441,7 @@
       </section>
     </main>
     <!-- footer -->
-
+    <!-- Logo -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo">
@@ -453,6 +453,8 @@
             digital marketing & growth solutions.
           </p>
         </div>
+
+        <!-- Social media -->
         <div class="social-media">
           <p class="social-media-title">Social media</p>
           <ul class="social-media-list-footer">
@@ -486,7 +488,102 @@
             </li>
           </ul>
         </div>
+        <!-- Form -->
+
+        <div class="footer-wrapper">
+          <p class="wrapper-caption">Subscribe</p>
+          <form class="subscribe-form" name="subscribe">
+            <label class="subscribe-form-field" for="subscribe"
+              ><input
+                class="subscribe-form-input"
+                type="email"
+                placeholder="E-mail"
+                name="subscribe"
+                id="subscribe"
+            /></label>
+            <button class="subscribe-form-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <div class="btn-container">
+          <button
+            class="modal-btn"
+            type="button"
+            aria-label="Modal close button"
+          >
+            <svg class="modal-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+        </div>
+
+        <p class="modal-caption">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form" name="reviews">
+          <label class="modal-label" for="name">Name</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="name" type="text" name="name" />
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="phone">Phone</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="phone" type="text" name="phone" />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="email">Email</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="email" type="text" name="email" />
+            <svg class="modal-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="comment">Comment</label>
+          <div class="modal-input-container">
+            <textarea
+              class="modal-comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <!-- Custom checkbox -->
+
+          <label class="form-agreement">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="usr_agreement"
+              value="false"
+            />
+            <span class="form-agreement-checkbox"
+              ><svg class="form-agreement-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-Vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="form-agreement-link" href="">Privacy Policy</a>
+          </label>
+
+          <!-- Send button -->
+          <button class="modal-send" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
